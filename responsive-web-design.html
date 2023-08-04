@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive web design</title>
+    <style>
+        *{
+            box-sizing: border-box;
+           
+            
+
+        }
+        body{
+            background-color: green;
+        }
+        [class*="col-"]{
+                width: 100%;
+            }
+          
+        .header{
+            background-color: aqua;
+            padding: 10px;
+            text-align: center;
+            font-size: 20px;
+            color: brown;
+        }
+        .nav-menu{
+            padding: 15px 5px;
+            background-color: bisque;
+            
+            
+        }
+        .nav-menu a{
+            color: black;
+            text-decoration: none;
+            display: block;
+            padding: 10px;
+            font-size: 1.2rem;
+            background-color: brown;
+            margin: 10px;
+            border-radius: 10px;
+       
+
+        }
+        .nav-menu a:hover{
+            background-color: rgb(147, 121, 170);
+        }
+        .main{
+            padding: 1px 3px;
+            background-color: rgb(103, 10, 189);
+            color: rgb(185, 175, 161);
+            height: 523px;
+        }
+        .aside{
+            padding: 1% 5%;
+            background-color: aquamarine;
+            text-align: center;
+        }
+        .footer{
+           background-color: black;
+           color: bisque;
+           padding: 20px;
+           text-align: center;
+        }
+      
+
+        [class*="col-"]{
+            float: left;
+            padding: 10px;
+        }
+        .row::after{
+            content: '';
+            clear: both;
+            display: table;
+
+        }
+        @media  screen and (min-width:768px) {
+              /*for dekstop*/
+        .col-1 {width: 8.33%;}
+        .col-2 {width: 16.66%;}
+        .col-3 {width: 25%;}
+        .col-4 {width: 33.33%;}
+        .col-5 {width: 41.66%;}
+        .col-6 {width: 50%;}
+        .col-7 {width: 58.33%;}
+        .col-8 {width: 66.66%;}
+        .col-9 {width: 75%;}
+        .col-10 {width: 83.33%;}
+        .col-11 {width: 91.66%;}
+        .col-12 {width: 100%;}
+
+        .nav-menu a{
+           text-align: center;
+           background-color: blueviolet;
+           margin: 10px;
+           border-radius: 10px;
+
+        }
+        .nav-menu a:hover{
+            background-color: orange;
+        }  
+          
+    }
+       
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>
+            Pappu bishwas
+        </h1>
+    </div>
+    <div class="row">
+        <div class="nav-menu col-2">
+            <a href="#">Home</a>
+            <a href="#">Home tanny pappu</a>
+            <a href="#">Home</a>
+            <a href="#">Home</a>
+            <a href="#">Home</a>
+        </div>
+        <div class="main col-7">
+            <h1>I am a web designer</h1>
+            <p>Dolores magna amet sed gubergren duo duo, magna ipsum nonumy sed sed diam tempor et tempor et. Sadipscing sed duo. </p>
+            <p>Stet et dolore et amet magna, invidunt eirmod dolores eirmod invidunt diam ipsum. Clita est vero erat labore kasd erat eirmod eirmod. Sit et est consetetur lorem stet sed et sadipscing et, stet et amet est ut lorem diam vero, ipsum dolores sit ipsum sea dolor et labore sit magna, clita invidunt magna lorem vero dolor. Sit eirmod aliquyam no ea sanctus, kasd sea sit stet lorem invidunt. Duo est lorem aliquyam nonumy, amet sit clita duo gubergren diam est elitr. Sed et ut eirmod aliquyam est amet dolore gubergren. Lorem sed no ipsum takimata sea takimata dolor, aliquyam erat.</p>
+            <p>Sanctus diam voluptua lorem no at justo dolore. Voluptua ea ut et dolore sadipscing, dolores lorem erat ut magna takimata.</p>
+        </div>
+        <div class="aside col-3">
+            <h2>what I love?</h2>
+            <p>Et labore amet est justo takimata duo. Duo erat diam aliquyam justo at amet dolor dolores, dolor sea sed voluptua</p>
+
+            <h2>What i do?</h2>
+            <p>Et sadipscing no eos lorem dolores amet ipsum invidunt takimata, at gubergren amet amet magna et. Stet nonumy takimata est.</p>
+
+            <h2>what i don't love</h2>
+            <p>Et sadipscing no eos lorem dolores amet ipsum invidunt takimata, at gubergren amet amet magna et. Stet nonumy takimata est.</p>
+
+            <h2> i love everyone</h2>
+            <p>Et sadipscing no eos lorem dolores amet ipsum invidunt takimata, at gubergren amet amet magna et. Stet nonumy takimata est.</p>
+
+        </div>
+    </div>
+<div class="footer">
+    &copy;i love very much you ..tannnnnnnnnny
+</div>
+</body>
+</html>

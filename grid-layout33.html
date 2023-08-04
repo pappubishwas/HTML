@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid layout-33</title>
+
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        body{
+            background-color: aquamarine;
+            height: 100vh;
+            padding: 10px;
+            display: grid;
+            grid-template-rows: min-content auto min-content;
+            grid-template-areas: 
+            'h'
+            'm'
+            'm'
+            'm'
+            'f'
+            ;
+        }
+        header{
+            grid-area: h;
+            background-color: rgb(70, 102, 192);
+            width: 100%;
+            text-align: center;
+            height: 50px;
+            border: pink solid 5px;
+          
+        }
+        main{
+            grid-area: m;
+            width: 100%;
+            height: 100%;
+            background-color: blueviolet;
+
+
+
+        }
+        footer{
+           grid-area: f;
+           width: 100%;
+           height: auto;
+           background-color: red;
+           display: grid;
+           grid-template-areas: 'n1 n2';
+           text-align: center;
+           border: yellow solid 5px;
+          
+        }
+        article{
+            display: grid;
+            grid-template-areas: 
+            's1 a1'
+            's2 a2'
+            's3 .' ;
+            height: 100%;
+
+        }
+        section{
+            background-color: bisque;
+            border: #008000 solid 3px;
+            
+            
+            text-align: center;
+
+        }
+        aside{
+            background-color: rgb(15, 230, 212);
+            border: rgb(219, 13, 13) solid 3px;
+            
+            text-align: center;
+
+        }
+     
+        #sec1{grid-area: s1;}
+        #sec2{grid-area: s2;}
+        #sec3{grid-area: s3;}
+        #aside1{grid-area: a1;}
+        #aside2{grid-area: a2;}
+    
+        #nav1{grid-area: n1;}
+        #nav2{grid-area: n2;}
+
+        @media  screen  and (max-width: 600px) {
+            footer{
+                grid-template-areas: 
+                'n1'
+                'n2'
+                ;
+            }
+            article{
+            
+            grid-template-areas: 
+            's1'
+            's2'
+            's3'
+            'a1'
+            'a2' ;
+            
+        }
+        }
+
+
+    </style>
+</head>
+<body>
+    <header>
+        <nav>Header nav</nav>
+    </header>
+
+   <main>
+       <article>
+           <section id="sec1">section1</section>
+           <section id="sec2">section2</section>
+           <section id="sec3">section3</section>
+
+           <aside id="aside1">Aside1</aside>
+           <aside id="aside2">Aside2</aside>
+       </article>
+   </main>
+   <footer>
+       <nav id="nav1"> nav1</nav>
+       <nav id="nav2">nav2</nav>
+   </footer>
+</body>
+</html>

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Card</title>
+   <style>
+     .img-card{
+         width: 100%;
+
+     }
+     .card{
+         width: 300px;
+         padding: 10px;
+         box-sizing: border-box;
+         box-shadow: 3px 4px 5px black;
+        
+     }
+     .card-body{
+         padding: 5px;
+         background-color: aquamarine;
+         border-radius: 5px;
+         border: 2px solid red;
+
+     }
+     .card-body .card-tittle{
+         text-align: center;
+         font-size: 2rem;
+         font-style: italic;
+         font-weight: bold;
+         color: rgb(0, 0, 255);
+         padding: 5px;
+         border: 5px solid brown;
+         border-radius: 3px;
+
+     }
+    .card-body .card-disc{
+        text-align:justify ;
+        line-height: 1.5;
+        font-weight: 400;
+        border: 3px solid peru;
+        padding: 5px;
+        border-radius: 3px;
+
+       
+
+    }
+    .card:hover{
+        box-shadow: 5px 5px 4px green;
+    }
+
+    .card-containers{
+        box-sizing: border-box;
+        display: flex;
+        flex-wrap: wrap;
+        background-color: black;
+        padding: 5px;
+        justify-content: center;
+        align-items: center;
+    }
+    
+
+   </style>
+</head>
+<body>
+    <div class="card-containers">
+         
+        <div class="card">
+
+            <img class="img-card" src="images/pappu.jpg">
+
+            <div class="card-body">
+
+                <div class="card-tittle">
+                    Python programer
+                </div>
+
+                <div class="card-disc">
+                    Invidunt consetetur ipsum dolor sed sed nonumy est consetetur duo, eos nonumy sea ipsum accusam tempor vero nonumy amet. Et sanctus vero takimata kasd et vero, ipsum consetetur sit lorem.
+                </div>
+
+            </div>
+           </div>
+
+           <div class="card">
+
+            <img class="img-card" src="images/pappu.jpg">
+
+            <div class="card-body">
+
+                <div class="card-tittle">
+                    Python programer
+                </div>
+
+                <div class="card-disc">
+                    Invidunt consetetur ipsum dolor sed sed nonumy est consetetur duo, eos nonumy sea ipsum accusam tempor vero nonumy amet. Et sanctus vero takimata kasd et vero, ipsum consetetur sit lorem.
+                </div>
+
+            </div>
+           </div>
+
+           <div class="card">
+
+            <img class="img-card" src="images/pappu.jpg">
+
+            <div class="card-body">
+
+                <div class="card-tittle">
+                    Python programer
+                </div>
+
+                <div class="card-disc">
+                    Invidunt consetetur ipsum dolor sed sed nonumy est consetetur duo, eos nonumy sea ipsum accusam tempor vero nonumy amet. Et sanctus vero takimata kasd et vero, ipsum consetetur sit lorem.
+                </div>
+
+            </div>
+           </div>
+    </div>
+</body>
+</html>

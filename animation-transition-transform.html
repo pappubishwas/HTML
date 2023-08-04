@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation , transtion and transform</title>
+    <style>
+      .main{
+          background-color: orange;
+          width: 300px;
+          height: 300px;
+          margin: 0 auto;
+          /*
+          transition-property: width;
+          transition-duration: 1.5s;
+          transition-delay: 0.2s;
+          transition-timing-function: ease-in-out;
+*/
+          transition: width 0.2s linear 1s, height 0.2s linear 1s, transform 0.6s;
+      }
+      .main:hover{
+          width: 450px;
+          height: 450px;
+          background-color: orangered;
+          transform: rotate(45deg);
+      }
+      h1{
+          color: rgb(15, 114, 114);
+          text-align: center;
+          margin-top: 30px;
+          transition: font-size 0.4s linear 1.5s;
+
+      }
+      h1:hover{
+          font-size: 60px;
+      }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <h1>
+            Bangladesh
+        </h1>
+    </div>
+</body>
+</html>

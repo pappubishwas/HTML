@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flexbox layout</title>
+    <style>
+        .flex_container{
+            display: flex;
+            background-color: rgb(60, 60, 160);
+            /*flex-wrap: wrap;
+            flex-direction: row;*/
+            flex-flow: wrap row;
+            justify-content: center;
+            align-items: center;
+            height: 300px;
+        }
+
+       .flex_container > div{
+           background-color: rgb(10, 10, 17);
+           color: rgb(248, 2, 43);
+           font-size: 30px;
+           font-weight: 500;
+           margin: 10px;
+           padding: 20px;
+           width: 50px;
+          
+       }
+
+
+    </style>
+</head>
+<body>
+    <div class="flex_container">
+        <div class="div1" style="order: 2;">
+            div1
+        </div>
+        <div class="div2" style="order: 1;">
+            div2
+        </div>
+        <div class="div3" style="order: 3; flex-basis: 200px;">
+            div3
+        </div>
+        <div class="div4" style="order: 4;">
+            div4
+        </div>
+        <div class="div5" style="order: 9;">
+            div5
+        </div>
+        <div class="div6" style="order: 8;">
+            div6
+        </div>
+        <div class="div7" style="order: 7;">
+            div7
+        </div>
+        
+        <div class="div8" style="order: 6;">
+            div8
+        </div>
+        <div class="div9" style="order: 5;">
+            div9
+        </div>
+
+    </div>
+</body>
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resposive navigation columns</title>
+    <STYLE>
+        *{
+            box-sizing: border-box;
+        }
+       .row{
+           display: flex;
+           flex-wrap: wrap;
+       }
+       .columns{
+           flex: 25%;
+           padding: 10px;
+
+       }
+       @media screen and (max-width:900px){
+            .columns{
+                flex: 50%;
+            }
+        }
+        @media screen and (max-width:600px){
+            .row{
+                flex-direction: column;
+            }
+        }
+
+       /* .columns{
+          float: left;
+          padding: 10px;
+            width: 25%;
+        }
+         
+        @media screen and (max-width:900px){
+            .columns{
+                width: 50%;
+            }
+        }
+        @media screen and (max-width:600px){
+            .columns{
+                width: 100%;
+            }
+        }
+*/
+         
+           
+        
+    </STYLE>
+</head>
+<body>
+    <div class="row">
+        <div class="columns">
+            <h1>CSS</h1>
+            <p>Vero sed consetetur et ea gubergren clita. Sanctus sea sed justo sed clita voluptua, et labore amet aliquyam no lorem.</p>
+        </div>
+        <div class="columns">
+            <h1>HTML</h1>
+            <p>Vero sed consetetur et ea gubergren clita. Sanctus sea sed justo sed clita voluptua, et labore amet aliquyam no lorem.</p>
+        </div>
+        <div class="columns">
+            <h1>JS</h1>
+            <p>Vero sed consetetur et ea gubergren clita. Sanctus sea sed justo sed clita voluptua, et labore amet aliquyam no lorem.</p>
+        </div>
+        <div class="columns">
+            <h1>Bootstarp</h1>
+            <p>Vero sed consetetur et ea gubergren clita. Sanctus sea sed justo sed clita voluptua, et labore amet aliquyam no lorem.</p>
+        </div>
+
+    </div>
+</body>
+</html>

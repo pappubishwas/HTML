@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation property</title>
+    <style>
+        img{
+            max-width: 200px;
+            height: auto;
+            border: 5px solid orangered;
+            border-radius: 50%;
+            display: block;
+            margin: 0 auto;
+            margin-top: 100px;
+
+            animation-name: pappu;
+            animation-duration: 3s;
+            position: relative;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+           
+
+        }
+
+        @keyframes pappu {
+            0%{
+                top: 0;
+                left: 0;
+                right: 0;
+                max-width: 200px;
+                border-color: green;
+            }
+            50%{
+                top: 100px;
+                left: 0px;
+                opacity: 0.5;
+                max-width: 300px;
+                border-color: rgb(8, 253, 192);
+                
+
+            }
+            100%{
+                top: 0;
+                left: 0;
+                max-width: 350px;
+                border-color: rgb(92, 8, 248);
+            }
+        }
+       /* img:hover{
+            animation-name: pappu;
+            animation-duration: 3s;
+            animation-fill-mode: forwards;
+
+        }
+
+        @keyframes pappu {
+            0%{
+                max-width: 200px;
+                border-color: green;
+            }
+            30%{
+                max-width: 230px;
+                border-color: rgb(248, 11, 11);
+            }
+            80%{
+                max-width: 300px;
+                border-color: rgb(8, 253, 192);
+            }
+            100%{
+                max-width: 350px;
+                border-color: rgb(92, 8, 248);
+            }
+        } */
+    </style>
+</head>
+<body>
+    <img src="images/pappu.jpg" alt="">
+</body>
+</html>
